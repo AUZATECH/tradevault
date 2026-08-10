@@ -38,6 +38,7 @@ const pool = mysql.createPool({
   user:     process.env.DB_USER     || 'root',
   password: process.env.DB_PASS     || '',
   database: process.env.DB_NAME     || 'tradevault',
+  port:     process.env.DB_PORT     || 3306,  
   waitForConnections: true,
   connectionLimit: 10
 });
